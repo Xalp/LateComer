@@ -1,0 +1,163 @@
+{
+ "tasks": {
+  "gsm8k": {
+   "n": 1319,
+   "ours_ar": 63.60522475886498,
+   "ls_ar": 67.23240415315034,
+   "la_ar": 63.176856733359564,
+   "ours_k4": 256.9276938483028,
+   "ours_k3": 322.5350980343341,
+   "ours_k2": 426.66071071895897,
+   "ls_best": 190.9410682225484,
+   "la_branches": {
+    "la": 174.61823807723118,
+    "la_fav": 197.75213646037602,
+    "nolad": 180.70548835555383
+   },
+   "la_best": 197.75213646037602,
+   "la_best_arm": "la_fav",
+   "mean_gen_len": 108.05458680818802,
+   "denom": 67.23240415315034,
+   "denom_is": "loopspec",
+   "r_k4": 3.8214860391284073,
+   "r_k3": 4.797316146833356,
+   "r_k2": 6.3460576204750625,
+   "r_ls_best": 2.8400154750914317,
+   "r_la_best": 2.9413218068167186
+  },
+  "ifeval": {
+   "n": 541,
+   "ours_ar": 63.46093684740997,
+   "ls_ar": 64.74665224775556,
+   "la_ar": 62.856227016201224,
+   "ours_k4": 137.06452761554917,
+   "ours_k3": 178.13062817161324,
+   "ours_k2": 238.5702726304054,
+   "ls_best": 151.74299171282385,
+   "la_branches": {
+    "la": 119.51398042177931,
+    "la_fav": 128.81220020476914,
+    "nolad": 172.98452227182304
+   },
+   "la_best": 172.98452227182304,
+   "la_best_arm": "nolad",
+   "mean_gen_len": 346.7301293900185,
+   "denom": 64.74665224775556,
+   "denom_is": "loopspec",
+   "r_k4": 2.1169361327141125,
+   "r_k3": 2.751194416816942,
+   "r_k2": 3.6846734826923107,
+   "r_ls_best": 2.3436422802552546,
+   "r_la_best": 2.671713768456956
+  },
+  "math500": {
+   "n": 500,
+   "ours_ar": 62.65837552789362,
+   "ls_ar": 61.36450931740198,
+   "la_ar": 62.12207286971253,
+   "ours_k4": 257.4210630256305,
+   "ours_k3": 317.67893553064283,
+   "ours_k2": 415.49606201450393,
+   "ls_best": 178.44421313517483,
+   "la_branches": {
+    "la": 134.49032005356997,
+    "la_fav": 156.7460339843508,
+    "nolad": 162.0335139157036
+   },
+   "la_best": 162.0335139157036,
+   "la_best_arm": "nolad",
+   "mean_gen_len": 311.418,
+   "denom": 62.65837552789362,
+   "denom_is": "ours",
+   "r_k4": 4.108326474423748,
+   "r_k3": 5.070015506374272,
+   "r_k2": 6.631133643570725,
+   "r_ls_best": 2.847890830743559,
+   "r_la_best": 2.5859833190787267
+  },
+  "mbpp": {
+   "n": 500,
+   "ours_ar": 62.139336652472366,
+   "ls_ar": 65.11387996395909,
+   "la_ar": 63.38170162443894,
+   "ours_k4": 236.87550255989984,
+   "ours_k3": 293.4100468562348,
+   "ours_k2": 387.380599688012,
+   "ls_best": 186.51656219083915,
+   "la_branches": {
+    "la": 166.28160016081824,
+    "la_fav": 188.94483222142642,
+    "nolad": 182.0252417512835
+   },
+   "la_best": 188.94483222142642,
+   "la_best_arm": "la_fav",
+   "mean_gen_len": 82.092,
+   "denom": 65.11387996395909,
+   "denom_is": "loopspec",
+   "r_k4": 3.6378649635225515,
+   "r_k3": 4.5061060256068135,
+   "r_k2": 5.949278401201547,
+   "r_ls_best": 2.864467027522813,
+   "r_la_best": 2.901759691267184
+  },
+  "bbh": {
+   "n": 6511,
+   "ours_ar": 62.50889497797638,
+   "ls_ar": 65.20549699669563,
+   "la_ar": 62.79435379722085,
+   "ours_k4": 214.52492791884288,
+   "ours_k3": 283.7830028291383,
+   "ours_k2": 412.66637526554274,
+   "ls_best": 171.1461551447706,
+   "la_branches": {
+    "la": 183.05788322305494,
+    "la_fav": 212.22760246049185,
+    "nolad": 176.3525211892788
+   },
+   "la_best": 212.22760246049185,
+   "la_best_arm": "la_fav",
+   "mean_gen_len": 71.00860082936569,
+   "denom": 65.20549699669563,
+   "denom_is": "loopspec",
+   "r_k4": 3.289982253025603,
+   "r_k3": 4.3521331160702506,
+   "r_k2": 6.328705312781453,
+   "r_ls_best": 2.624719740322563,
+   "r_la_best": 3.2547501703920263
+  },
+  "mmlupro": {
+   "n": 12032,
+   "ours_ar": 62.35342765729681,
+   "ls_ar": 61.205044296164345,
+   "la_ar": 61.820855524550424,
+   "ours_k4": 221.81393477758994,
+   "ours_k3": 284.41529963228464,
+   "ours_k2": 381.66016170069986,
+   "ls_best": 171.69758904203113,
+   "la_branches": {
+    "la": 114.64650778737717,
+    "la_fav": 124.51886005368246,
+    "nolad": 152.10325412392294
+   },
+   "la_best": 152.10325412392294,
+   "la_best_arm": "nolad",
+   "mean_gen_len": 194.50664893617022,
+   "denom": 62.35342765729681,
+   "denom_is": "ours",
+   "r_k4": 3.5573655388555454,
+   "r_k3": 4.561341859111114,
+   "r_k2": 6.120917101756741,
+   "r_ls_best": 2.7536190950993933,
+   "r_la_best": 2.439372779310606
+  }
+ },
+ "problems": [
+  "loopahead lafull_mmlupro_s0_mmlupro.json: meta.done false (keeping completed modes: ['ar', 'la'])",
+  "loopahead lafull_mmlupro_s3_mmlupro.json: meta.done false (keeping completed modes: ['ar'])",
+  "loopahead lafull_mmlupro_s5_mmlupro.json: meta.done false (keeping completed modes: ['ar'])",
+  "loopahead lavfull_mmlupro_s3_mmlupro.json: meta.done false (keeping completed modes: ['ar'])",
+  "loopahead lavfull_mmlupro_s5_mmlupro.json: meta.done false (keeping completed modes: ['ar', 'la'])"
+ ],
+ "n_total": 21403,
+ "protocol": "decode tokens/s; denom = max(full-depth AR of ours, LoopSpec, LoopAhead) per task; shards pooled as sum(decode tokens)/sum(decode seconds); batch 1, greedy, bf16, one GPU"
+}

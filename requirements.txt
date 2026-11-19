@@ -1,0 +1,19 @@
+# Core model, training, and CPU verification dependencies
+torch>=2.4.0
+transformers>=4.46.0
+accelerate>=1.0.0
+datasets>=3.0.0
+safetensors>=0.4.5
+numpy>=1.26.0
+matplotlib>=3.8.0
+
+# Evaluation suite dependencies (optional for standalone decoding)
+lm-eval>=0.4.5
+sympy>=1.12
+math-verify>=0.5.0
+langdetect>=1.0.9
+
+# High-throughput H100 GPU kernel dependencies (Linux + CUDA 12.4/13.0)
+# triton>=3.1.0
+# sgl-kernel>=0.4.4
+# flashinfer-python>=0.2.0

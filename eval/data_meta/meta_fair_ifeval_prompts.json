@@ -1,0 +1,22 @@
+{
+ "nv": 49153,
+ "eos": [
+  0,
+  2
+ ],
+ "mask_id": 49152,
+ "source": "eval/data/_tasks/ifeval.jsonl",
+ "model": "Xalphinions/ouro-2.6b-late-entry",
+ "transformers": "4.57.1",
+ "n": 120,
+ "prompt_len_max": 376,
+ "prompt_len_mean": 67.7079482439926,
+ "prompt_len": {
+  "min": 37,
+  "p50": 61,
+  "p95": 111,
+  "max": 235,
+  "mean": 67.8
+ },
+ "subset": "every 4th document of meta_ifeval_v2_prompts.json, first 120 - the SAME documents the other engine ran (doc_ids verified identical)"
+}

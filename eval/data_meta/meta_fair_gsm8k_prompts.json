@@ -1,0 +1,20 @@
+{
+ "nv": 49153,
+ "eos": [
+  0,
+  2
+ ],
+ "mask_id": 49152,
+ "source": "eval/data/_tasks/gsm8k_cot_zeroshot.jsonl",
+ "model": "Xalphinions/ouro-2.6b-late-entry",
+ "transformers": "4.57.1",
+ "n": 120,
+ "prompt_len": {
+  "min": 57,
+  "p50": 91,
+  "p95": 133,
+  "max": 190,
+  "mean": 94.7
+ },
+ "subset": "every 11th document of meta_gsm8k_v2_prompts.json, first 120 - the SAME documents the other engine ran (doc_ids verified identical)"
+}

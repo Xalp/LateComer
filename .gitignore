@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+.cache/
+
+# Large raw generation dumps, checkpoints, and dataset caches
+logs/
+*.jsonl
+*.pkl
+*.parquet
+*.arrow
+*.tar
+*.tar.gz
+*.safetensors
+*.bin
+*.pt

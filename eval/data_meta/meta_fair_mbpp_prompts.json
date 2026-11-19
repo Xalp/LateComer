@@ -1,0 +1,36 @@
+{
+ "nv": 49153,
+ "eos": [
+  0,
+  2
+ ],
+ "mask_id": 49152,
+ "task": "mbpp_instruct",
+ "variant": "mbpp",
+ "num_fewshot": 0,
+ "apply_chat_template": true,
+ "lm_eval": "0.4.12",
+ "chat_template_sha": "609d03c963c8",
+ "harness_gen_kwargs": [
+  "{\"do_sample\": false, \"max_gen_toks\": 256}"
+ ],
+ "until": [
+  []
+ ],
+ "until_overridden": false,
+ "source": "eval/data/raw/mbpp_instruct.jsonl",
+ "model": "Xalphinions/ouro-2.6b-late-entry",
+ "tokenizer_sha": "852100f1b891e59d",
+ "transformers": "4.57.0",
+ "n": 120,
+ "S": 5120,
+ "max_new": 1024,
+ "prompt_len": {
+  "min": 90,
+  "p50": 118,
+  "p95": 262,
+  "max": 381,
+  "mean": 143.6
+ },
+ "subset": "every 4th document of meta_mbpp_prompts.json, first 120 - the SAME documents the other engine ran (doc_ids verified identical)"
+}

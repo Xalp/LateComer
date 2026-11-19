@@ -1,0 +1,40 @@
+{
+ "nv": 49153,
+ "eos": [
+  0,
+  2
+ ],
+ "mask_id": 49152,
+ "task": "bbh_cot_zeroshot",
+ "variant": "bbh",
+ "num_fewshot": 0,
+ "apply_chat_template": true,
+ "lm_eval": "0.4.12",
+ "chat_template_sha": "609d03c963c8",
+ "harness_gen_kwargs": [
+  "{\"do_sample\": false, \"temperature\": 0.0}"
+ ],
+ "until": [
+  [
+   "</s>",
+   "Q:",
+   "<|im_end|>"
+  ]
+ ],
+ "until_overridden": false,
+ "source": "eval/data/raw/bbh_cot_zeroshot.jsonl",
+ "model": "Xalphinions/ouro-2.6b-late-entry",
+ "tokenizer_sha": "852100f1b891e59d",
+ "transformers": "4.57.0",
+ "n": 120,
+ "S": 5120,
+ "max_new": 1024,
+ "prompt_len": {
+  "min": 46,
+  "p50": 147,
+  "p95": 267,
+  "max": 559,
+  "mean": 148.5
+ },
+ "subset": "every 54th document of meta_bbh_prompts.json, first 120 - the SAME documents the other engine ran (doc_ids verified identical)"
+}

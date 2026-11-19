@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "host": "single-h100-80gb",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "mode": "lk:3:b0",
+    "parsed_mode": {
+      "kind": "lk",
+      "K": 3,
+      "B": 0,
+      "sets": [],
+      "shape": "b0"
+    },
+    "W": 1536,
+    "pool_slots": 26624,
+    "max_new": 1024,
+    "ops": {
+      "rms": "sglang.RMSNorm",
+      "add_rms": "sglang.RMSNorm(fused add)",
+      "silu": "sglang.jit_kernel.activation.silu_and_mul",
+      "rope": "flashinfer.rope[cos_sin32]"
+    }
+  },
+  "check": {
+    "exact": true,
+    "token_diffs": 0
+  },
+  "results": [
+    {
+      "C": 1,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        3,
+        2,
+        2
+      ],
+      "meas_steps": 2524,
+      "meas_tokens": 2500,
+      "meas_raw_commits": 2524,
+      "meas_refills": 24,
+      "t_decode_s": 31.4058,
+      "t_refill_s": 1.6255,
+      "t_capture_s": 0.17,
+      "decode_tok_s": 79.6,
+      "per_req_tok_s": 79.6,
+      "tpot_ms": 12.562,
+      "e2e_tok_s": 75.69,
+      "mean_eff_tokens_per_req_step": 0.99,
+      "med_step_ms": 12.462,
+      "p90_step_ms": 12.566,
+      "peak_kv_slots": 317,
+      "gpu_mem_gb": 44.29
+    },
+    {
+      "C": 2,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        6,
+        4,
+        4
+      ],
+      "meas_steps": 1261,
+      "meas_tokens": 2500,
+      "meas_raw_commits": 2522,
+      "meas_refills": 22,
+      "t_decode_s": 16.3374,
+      "t_refill_s": 1.4037,
+      "t_capture_s": 0.182,
+      "decode_tok_s": 153.02,
+      "per_req_tok_s": 76.51,
+      "tpot_ms": 13.07,
+      "e2e_tok_s": 140.92,
+      "mean_eff_tokens_per_req_step": 0.991,
+      "med_step_ms": 12.933,
+      "p90_step_ms": 13.196,
+      "peak_kv_slots": 608,
+      "gpu_mem_gb": 44.29
+    },
+    {
+      "C": 4,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        12,
+        8,
+        8
+      ],
+      "meas_steps": 631,
+      "meas_tokens": 2502,
+      "meas_raw_commits": 2524,
+      "meas_refills": 22,
+      "t_decode_s": 8.5212,
+      "t_refill_s": 1.3933,
+      "t_capture_s": 0.194,
+      "decode_tok_s": 293.62,
+      "per_req_tok_s": 73.4,
+      "tpot_ms": 13.623,
+      "e2e_tok_s": 252.36,
+      "mean_eff_tokens_per_req_step": 0.991,
+      "med_step_ms": 13.502,
+      "p90_step_ms": 13.645,
+      "peak_kv_slots": 1246,
+      "gpu_mem_gb": 44.29
+    },
+    {
+      "C": 8,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        24,
+        16,
+        16
+      ],
+      "meas_steps": 400,
+      "meas_tokens": 3167,
+      "meas_raw_commits": 3200,
+      "meas_refills": 33,
+      "t_decode_s": 5.8039,
+      "t_refill_s": 2.2078,
+      "t_capture_s": 0.17,
+      "decode_tok_s": 545.67,
+      "per_req_tok_s": 68.21,
+      "tpot_ms": 14.661,
+      "e2e_tok_s": 395.3,
+      "mean_eff_tokens_per_req_step": 0.99,
+      "med_step_ms": 14.511,
+      "p90_step_ms": 14.675,
+      "peak_kv_slots": 2676,
+      "gpu_mem_gb": 44.29
+    },
+    {
+      "C": 16,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        48,
+        32,
+        32
+      ],
+      "meas_steps": 400,
+      "meas_tokens": 6331,
+      "meas_raw_commits": 6400,
+      "meas_refills": 69,
+      "t_decode_s": 6.648,
+      "t_refill_s": 4.373,
+      "t_capture_s": 0.202,
+      "decode_tok_s": 952.31,
+      "per_req_tok_s": 59.52,
+      "tpot_ms": 16.801,
+      "e2e_tok_s": 574.45,
+      "mean_eff_tokens_per_req_step": 0.989,
+      "med_step_ms": 16.611,
+      "p90_step_ms": 16.857,
+      "peak_kv_slots": 4915,
+      "gpu_mem_gb": 44.29
+    },
+    {
+      "C": 32,
+      "rows_per_req_per_call": [
+        3,
+        2,
+        2
+      ],
+      "total_rows_per_call": [
+        96,
+        64,
+        64
+      ],
+      "meas_steps": 400,
+      "meas_tokens": 12669,
+      "meas_raw_commits": 12800,
+      "meas_refills": 131,
+      "t_decode_s": 8.1803,
+      "t_refill_s": 7.3763,
+      "t_capture_s": 0.204,
+      "decode_tok_s": 1548.72,
+      "per_req_tok_s": 48.4,
+      "tpot_ms": 20.662,
+      "e2e_tok_s": 814.38,
+      "mean_eff_tokens_per_req_step": 0.99,
+      "med_step_ms": 20.47,
+      "p90_step_ms": 20.711,
+      "peak_kv_slots": 10202,
+      "gpu_mem_gb": 44.3
+    }
+  ]
+}

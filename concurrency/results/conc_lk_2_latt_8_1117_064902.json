@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "host": "single-h100-80gb",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "mode": "lk:2:latt:8",
+    "parsed_mode": {
+      "kind": "lk",
+      "K": 2,
+      "B": 8,
+      "sets": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "shape": "latt:8"
+    },
+    "W": 1536,
+    "pool_slots": 26624,
+    "max_new": 1024,
+    "ops": {
+      "rms": "sglang.RMSNorm",
+      "add_rms": "sglang.RMSNorm(fused add)",
+      "silu": "sgl_kernel.silu_and_mul",
+      "rope": "flashinfer.rope[cos_sin32]"
+    }
+  },
+  "check": {
+    "exact": true,
+    "token_diffs": 0
+  },
+  "results": [
+    {
+      "C": 1,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        99,
+        99
+      ],
+      "meas_steps": 625,
+      "meas_tokens": 2500,
+      "meas_raw_commits": 2592,
+      "meas_refills": 23,
+      "t_decode_s": 6.0861,
+      "t_refill_s": 1.6069,
+      "t_capture_s": 0.125,
+      "decode_tok_s": 410.77,
+      "per_req_tok_s": 410.77,
+      "tpot_ms": 2.434,
+      "e2e_tok_s": 324.97,
+      "mean_eff_tokens_per_req_step": 4.0,
+      "med_step_ms": 9.763,
+      "p90_step_ms": 9.916,
+      "peak_kv_slots": 405,
+      "gpu_mem_gb": 49.85
+    },
+    {
+      "C": 2,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        198,
+        198
+      ],
+      "meas_steps": 307,
+      "meas_tokens": 2508,
+      "meas_raw_commits": 2593,
+      "meas_refills": 22,
+      "t_decode_s": 3.5483,
+      "t_refill_s": 1.3788,
+      "t_capture_s": 0.152,
+      "decode_tok_s": 706.82,
+      "per_req_tok_s": 353.41,
+      "tpot_ms": 2.83,
+      "e2e_tok_s": 509.02,
+      "mean_eff_tokens_per_req_step": 4.085,
+      "med_step_ms": 11.591,
+      "p90_step_ms": 11.743,
+      "peak_kv_slots": 803,
+      "gpu_mem_gb": 49.85
+    },
+    {
+      "C": 4,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        396,
+        396
+      ],
+      "meas_steps": 200,
+      "meas_tokens": 3266,
+      "meas_raw_commits": 3388,
+      "meas_refills": 31,
+      "t_decode_s": 2.9537,
+      "t_refill_s": 1.9075,
+      "t_capture_s": 0.127,
+      "decode_tok_s": 1105.74,
+      "per_req_tok_s": 276.44,
+      "tpot_ms": 3.617,
+      "e2e_tok_s": 671.86,
+      "mean_eff_tokens_per_req_step": 4.082,
+      "med_step_ms": 14.766,
+      "p90_step_ms": 14.997,
+      "peak_kv_slots": 1646,
+      "gpu_mem_gb": 49.85
+    },
+    {
+      "C": 8,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        792,
+        792
+      ],
+      "meas_steps": 200,
+      "meas_tokens": 6493,
+      "meas_raw_commits": 6782,
+      "meas_refills": 67,
+      "t_decode_s": 4.6349,
+      "t_refill_s": 3.9209,
+      "t_capture_s": 0.128,
+      "decode_tok_s": 1400.9,
+      "per_req_tok_s": 175.11,
+      "tpot_ms": 5.711,
+      "e2e_tok_s": 758.9,
+      "mean_eff_tokens_per_req_step": 4.058,
+      "med_step_ms": 23.176,
+      "p90_step_ms": 23.562,
+      "peak_kv_slots": 3195,
+      "gpu_mem_gb": 49.85
+    },
+    {
+      "C": 16,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        1584,
+        1584
+      ],
+      "meas_steps": 200,
+      "meas_tokens": 13242,
+      "meas_raw_commits": 13844,
+      "meas_refills": 134,
+      "t_decode_s": 8.4038,
+      "t_refill_s": 6.3691,
+      "t_capture_s": 0.146,
+      "decode_tok_s": 1575.72,
+      "per_req_tok_s": 98.48,
+      "tpot_ms": 10.154,
+      "e2e_tok_s": 896.37,
+      "mean_eff_tokens_per_req_step": 4.138,
+      "med_step_ms": 41.907,
+      "p90_step_ms": 42.756,
+      "peak_kv_slots": 6576,
+      "gpu_mem_gb": 49.85
+    },
+    {
+      "C": 32,
+      "rows_per_req_per_call": [
+        99,
+        99
+      ],
+      "total_rows_per_call": [
+        3168,
+        3168
+      ],
+      "meas_steps": 200,
+      "meas_tokens": 27341,
+      "meas_raw_commits": 28554,
+      "meas_refills": 269,
+      "t_decode_s": 16.3281,
+      "t_refill_s": 10.0844,
+      "t_capture_s": 0.214,
+      "decode_tok_s": 1674.47,
+      "per_req_tok_s": 52.33,
+      "tpot_ms": 19.111,
+      "e2e_tok_s": 1035.15,
+      "mean_eff_tokens_per_req_step": 4.272,
+      "med_step_ms": 81.348,
+      "p90_step_ms": 83.678,
+      "peak_kv_slots": 13002,
+      "gpu_mem_gb": 49.85
+    }
+  ]
+}
